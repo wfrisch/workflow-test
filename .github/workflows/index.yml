@@ -22,9 +22,5 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Install dependencies
-      run: |
-        sudo apt-get install -y python3-pygit2
-
     - name: Try to use the dependency
       run: python3 test.py
